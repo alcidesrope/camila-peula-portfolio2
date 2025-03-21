@@ -9,7 +9,7 @@ const featuredProjects: (Project & { categoryPath: string })[] = [
     title: "Campaña Verano 2023",
     category: "publicidad",
     categoryPath: "publicidad",
-    thumbnail: "/placeholder.svg?height=800&width=1600",
+    thumbnail: "/images/home/test_grande.jpg",
     slug: "campana-verano-2023",
     miniDescription: "Dirección de arte para campaña publicitaria de temporada",
   },
@@ -18,7 +18,7 @@ const featuredProjects: (Project & { categoryPath: string })[] = [
     title: "Película Drama",
     category: "peliculas",
     categoryPath: "peliculas",
-    thumbnail: "/placeholder.svg?height=800&width=1600",
+    thumbnail: "/images/home/test_grande2.jpg",
     slug: "pelicula-drama",
     miniDescription: "Diseño de vestuario y dirección artística para largometraje",
   },
@@ -53,11 +53,7 @@ const featuredProjects: (Project & { categoryPath: string })[] = [
 
 export default function Home() {
   return (
-    <div className="w-full px-0 py-8">
-      <div className="container mx-auto px-4 mb-8">
-        <h1 className="text-3xl md:text-4xl font-bold">Trabajos Destacados</h1>
-      </div>
-
+    <div className="w-full px-0">
       <div className="w-full">
         {featuredProjects.map((project) => (
           <Link
