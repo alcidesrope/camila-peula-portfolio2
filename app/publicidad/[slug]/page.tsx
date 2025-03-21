@@ -71,7 +71,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
 
   if (!projectData) {
     return (
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4">
         <h1 className="text-3xl font-bold mb-4">Proyecto no encontrado</h1>
         <p>El proyecto que estás buscando no existe o ha sido eliminado.</p>
       </div>
@@ -79,7 +79,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
   }
 
   return (
-    <div className="w-full px-0 py-8">
+    <div className="w-full px-0">
       <ProjectDetail {...projectData} />
     </div>
   )

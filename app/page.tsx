@@ -27,27 +27,9 @@ const featuredProjects: (Project & { categoryPath: string })[] = [
     title: "Serie Drama",
     category: "series",
     categoryPath: "series",
-    thumbnail: "/placeholder.svg?height=800&width=1600",
+    thumbnail: "/images/home/test_grande3.jpg",
     slug: "serie-drama",
     miniDescription: "Concepto visual y dirección de arte para serie de televisión",
-  },
-  {
-    id: "4",
-    title: "Cortometraje Experimental",
-    category: "cortometrajes",
-    categoryPath: "cortometrajes",
-    thumbnail: "/placeholder.svg?height=800&width=1600",
-    slug: "cortometraje-experimental",
-    miniDescription: "Propuesta estética innovadora para cortometraje",
-  },
-  {
-    id: "5",
-    title: "Videoclip Artista A",
-    category: "videoclips",
-    categoryPath: "videoclips",
-    thumbnail: "/placeholder.svg?height=800&width=1600",
-    slug: "videoclip-artista-a",
-    miniDescription: "Dirección artística y concepto visual para videoclip musical",
   },
 ]
 
