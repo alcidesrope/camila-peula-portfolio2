@@ -20,7 +20,7 @@ export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#fdeaf2]/90 backdrop-blur-sm">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <Link href="/" className="text-xl font-medium">
           Camila Peula
@@ -47,7 +47,7 @@ export default function Navigation() {
 
       {/* Mobile navigation */}
       {mobileMenuOpen && (
-        <nav className="md:hidden py-4 px-4 bg-white border-t">
+        <nav className="md:hidden py-4 px-4 bg-[#fdeaf2] border-t">
           <div className="flex flex-col space-y-4">
             {routes.map((route) => (
               <Link

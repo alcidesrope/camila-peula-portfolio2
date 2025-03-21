@@ -9,7 +9,6 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Camila Peula | Art & Costume Director",
   description: "Portfolio of Camila Peula, Art and Costume Director",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -19,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={inter.className}>
+      <body className={`${inter.className} bg-[#fdeaf2]`}>
         <Navigation />
         <main className="min-h-screen pt-16">{children}</main>
       </body>
@@ -27,6 +26,3 @@ export default function RootLayout({
   )
 }
 
-
-
-import './globals.css'

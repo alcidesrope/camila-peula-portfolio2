@@ -2,13 +2,13 @@ import Image from "next/image"
 
 export default function InfoPage() {
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto px-4 py-8 bg-[#fdeaf2]">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-3xl md:text-4xl font-bold mb-8">Camila Peula</h1>
 
         <div className="mb-8">
           <Image
-            src="/placeholder.svg?height=800&width=1200"
+            src="/images/info/camila.png"
             alt="Camila Peula"
             width={1200}
             height={800}
@@ -51,4 +51,6 @@ export default function InfoPage() {
     </div>
   )
 }
+
+
 
