@@ -4,29 +4,37 @@ import ProjectGrid, { type Project } from "@/components/project-grid"
 const projects: Project[] = [
   {
     id: "1",
-    title: "Serie Drama",
-    category: "series",
+    title: "Película Drama",
+    category: "peliculas",
     thumbnail: "/placeholder.svg?height=800&width=1600",
-    slug: "serie-drama",
-    miniDescription: "Concepto visual y dirección de arte para serie de televisión",
+    slug: "pelicula-drama",
+    miniDescription: "Diseño de vestuario y dirección artística para largometraje",
   },
   {
     id: "2",
-    title: "Serie Comedia",
-    category: "series",
+    title: "Película Comedia",
+    category: "peliculas",
     thumbnail: "/placeholder.svg?height=800&width=1600",
-    slug: "serie-comedia",
-    miniDescription: "Diseño de vestuario y dirección artística para serie de comedia",
+    slug: "pelicula-comedia",
+    miniDescription: "Concepto visual y dirección de arte para comedia",
+  },
+  {
+    id: "3",
+    title: "Película Acción",
+    category: "peliculas",
+    thumbnail: "/placeholder.svg?height=800&width=1600",
+    slug: "pelicula-accion",
+    miniDescription: "Dirección artística para película de acción",
   },
 ]
 
-export default function SeriesPage() {
+export default function PeliculasPage() {
   return (
-    <div className="w-full px-0">
+    <div className="w-full px-0 py-8">
       <div className="container mx-auto px-4 mb-8">
-        <h1 className="text-3xl md:text-4xl font-bold">Series</h1>
+        <h1 className="text-3xl md:text-4xl font-bold text-white">Películas</h1>
       </div>
-      <ProjectGrid projects={projects} category="series" />
+      <ProjectGrid projects={projects} category="peliculas" />
     </div>
   )
 }
