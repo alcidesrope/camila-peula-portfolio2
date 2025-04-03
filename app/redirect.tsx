@@ -33,7 +33,7 @@ function CategoryCard({ title, href, imageSrc }: { title: string; href: string; 
           fill
           className="object-cover transition-transform duration-500 group-hover:scale-110"
         />
-        <div className="absolute inset-0 bg-[#1f1f1f] flex items-end p-4">
+        <div className="absolute inset-0 bg-black/30 flex items-end p-4">
           <h2 className="text-white text-xl font-medium">{title}</h2>
         </div>
       </div>

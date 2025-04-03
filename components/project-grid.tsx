@@ -36,7 +36,7 @@ function ProjectCard({ project, category }: { project: Project; category: string
             fill
             className="object-cover transition-transform duration-500 group-hover:scale-110"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-100">
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-100">
             <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
               <h3 className="text-white text-xl md:text-2xl font-medium">{project.title}</h3>
               {project.miniDescription && (

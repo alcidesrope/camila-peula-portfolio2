@@ -32,7 +32,7 @@ export default function CortometrajesPage() {
   return (
     <div className="w-full px-0">
       <div className="container mx-auto px-4 mb-8">
-        <h1 className="text-3xl md:text-4xl font-bold text-white">Cortometrajes</h1>
+        <h1 className="text-3xl md:text-4xl font-bold">Cortometrajes</h1>
       </div>
       <ProjectGrid projects={projects} category="cortometrajes" />
     </div>

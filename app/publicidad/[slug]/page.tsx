@@ -4,17 +4,19 @@ import ProjectDetail from "@/components/project-detail"
 const getProjectData = (slug: string) => {
   // Mock data - in a real app, this would fetch from an API or CMS
   const projects = {
-    "hay-excusas-que-matan": {
-      title: "Hay excusas que matan",
-      videoUrl: "https://www.youtube.com/embed/bRSuN2_pk6o",
+    "campana-verano-2023": {
+      title: "Campaña Verano 2023",
+      videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
       flyerImage: "/placeholder.svg?height=1200&width=1920",
       description:
-        "Fruta que camila tiene que completar para que tenga sentido, o sacar la descripcion",
+        "Campaña publicitaria para la temporada de verano 2023, destacando los nuevos productos de la marca con un enfoque fresco y vibrante que captura la esencia del verano.",
       credits: [
-        { role: "Dirección de Arte", name: "Camila Peula" }
+        { role: "Dirección de Arte", name: "Camila Peula" },
+        { role: "Dirección", name: "Director X" },
+        { role: "Fotografía", name: "Fotógrafo Y" },
       ],
       year: "2023",
-      client: "Gobierno del Paraguay",
+      client: "Marca Z",
     },
     "spot-televisivo-marca-x": {
       title: "Spot Televisivo Marca X",

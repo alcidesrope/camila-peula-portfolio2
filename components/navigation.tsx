@@ -20,14 +20,14 @@ export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#1f1f1f] backdrop-blur-sm">
-      <div className="container mx-auto px-4 py-3 flex justify-between items-center border-b border-gray-800">
-        <Link href="/" className="text-xl font-medium text-white">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#fdeaf2]/90 backdrop-blur-sm">
+      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+        <Link href="/" className="text-xl font-medium">
           Camila Peula
         </Link>
 
         {/* Mobile menu button */}
-        <button className="md:hidden text-white" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+        <button className="md:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
           {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
 
@@ -37,7 +37,7 @@ export default function Navigation() {
             <Link
               key={route.path}
               href={route.path}
-              className={`text-white hover:text-gray-300 transition-colors ${pathname === route.path ? "font-medium" : ""}`}
+              className={`hover:text-gray-600 transition-colors ${pathname === route.path ? "font-medium" : ""}`}
             >
               {route.name}
             </Link>
@@ -47,13 +47,13 @@ export default function Navigation() {
 
       {/* Mobile navigation */}
       {mobileMenuOpen && (
-        <nav className="md:hidden py-4 px-4 bg-[#1f1f1f] border-t border-gray-800">
+        <nav className="md:hidden py-4 px-4 bg-[#fdeaf2] border-t">
           <div className="flex flex-col space-y-4">
             {routes.map((route) => (
               <Link
                 key={route.path}
                 href={route.path}
-                className={`text-white hover:text-gray-300 transition-colors ${pathname === route.path ? "font-medium" : ""}`}
+                className={`hover:text-gray-600 transition-colors ${pathname === route.path ? "font-medium" : ""}`}
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {route.name}
